@@ -213,8 +213,8 @@ window.FORAGER = {
    "reward": "4x Small Chest",
    "obj": "objTreasureChestSmall (151), variável onFire",
    "status": "fixed",
-   "note": "Corrigido (branch play): apagar o fogo de um baú apaga para os dois, e abrir abre para os dois.",
-   "reset": false
+   "note": "Corrigido (branch play): apagar o fogo (gelo ou garrafa d’água) vale para os dois, o gelo da vara aparece e derrete para os dois, e abrir abre para os dois. /puzzlereset 18 recria os 4 baús pegando fogo.",
+   "reset": true
   },
   {
    "n": 19,
@@ -680,7 +680,7 @@ window.FORAGER = {
  "commands": [
   {
    "cmd": "/puzzlereset <n>",
-   "desc": "Reseta o puzzle n para os dois jogadores. Funciona com 5, 9, 11, 14, 15 (recria o bloco de gelo) e 20 (recria o cristal gigante); o 15 e o 20 também tiram os baús de recompensa em volta."
+   "desc": "Reseta o puzzle n para os dois jogadores. Funciona com 5, 9, 11, 14, 15 (recria o bloco de gelo), 18 (recria os 4 baús pegando fogo) e 20 (recria o cristal gigante); o 15 e o 20 também tiram os baús de recompensa em volta."
   },
   {
    "cmd": "/chestremove",
