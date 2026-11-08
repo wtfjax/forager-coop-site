@@ -176,9 +176,9 @@ window.FORAGER = {
    "solution": "Use a fire sword, fire pickaxe, fire bow, or demon scroll to melt the ice or drop a grenade.",
    "reward": "Big Chest",
    "obj": "objFrozenChest (178)",
-   "status": "mod",
-   "note": "O mod original sincroniza o gelo derretendo (puzzles.cpp).",
-   "reset": false
+   "status": "fixed",
+   "note": "Corrigido (branch play): o fogo de qualquer jogador derrete o gelo para os dois. /puzzlereset 15 recria o bloco de gelo e tira o baú de recompensa.",
+   "reset": true
   },
   {
    "n": 16,
@@ -211,9 +211,9 @@ window.FORAGER = {
    "image": "https://static.wikia.nocookie.net/forager_gamepedia_en/images/2/20/Ss_4_Small_Chests_on_Fire.png/revision/latest?cb=20180922183421",
    "solution": "Use a water bottle or freezing damage to put out the fires.",
    "reward": "4x Small Chest",
-   "obj": "",
-   "status": "unknown",
-   "note": "Ainda não verificado no co-op.",
+   "obj": "objTreasureChestSmall (151), variável onFire",
+   "status": "fixed",
+   "note": "Corrigido (branch play): apagar o fogo de um baú apaga para os dois, e abrir abre para os dois.",
    "reset": false
   },
   {
@@ -571,7 +571,8 @@ window.FORAGER = {
    "feature": "Mine the giant crystal to earn a Feat",
    "image": "https://static.wikia.nocookie.net/forager_gamepedia_en/images/4/42/Ss_Giant_Crystal.png/revision/latest?cb=20180922181539",
    "kind": "Feat",
-   "desc": "Minere o cristal gigante para ganhar um feat"
+   "desc": "Minere o cristal gigante para ganhar um feat",
+   "cmd": "/puzzlereset 20"
   },
   {
    "biome": "Inverno",
@@ -679,7 +680,7 @@ window.FORAGER = {
  "commands": [
   {
    "cmd": "/puzzlereset <n>",
-   "desc": "Reseta o puzzle n para os dois jogadores (peças vazias e não resolvidas)."
+   "desc": "Reseta o puzzle n para os dois jogadores. Funciona com 5, 9, 11, 14, 15 (recria o bloco de gelo) e 20 (recria o cristal gigante); o 15 e o 20 também tiram os baús de recompensa em volta."
   },
   {
    "cmd": "/chestremove",

@@ -381,6 +381,8 @@ function openLand(i) {
   show(`<div>${closeBtn}<h3>${esc(l.land)}</h3>
       <div class="meta"><span class="tag b-${l.biome}">${esc(L(l.biome))}</span><span class="tag" style="color:var(--muted)">${esc(l.kind)}</span></div></div>
       <div class="row"><b>${t("whatsThere")}</b><div>${esc(l.desc)}</div></div>
+      ${l.cmd ? `<div class="row"><b>${t("cmdsRow")}</b><div style="display:flex;flex-direction:column;gap:6px">${cmdBox(l.cmd)}${cmdBox("/chestremove")}
+        <span class="muted">${t("respawnHelp")}</span></div></div>` : ""}
       <div class="row"><b>${t("wiki")}</b><div><a href="https://forager.fandom.com/wiki/${WIKI_BIOME[l.biome]}" target="_blank">${t("biomeWiki")}</a></div></div>${notesRow(i)}`, l.image);
 }
 
@@ -402,7 +404,8 @@ function openCommands() {
   show(`<div>${closeBtn}<h3>${t("chatCommands")}</h3></div>
       <p class="muted" style="margin:0">${t("chatHelp")}</p>
       ${D.commands.map((c) => `<div>${cmdBox(c.cmd)}<div class="muted" style="margin-top:4px">${esc(c.desc)}</div></div>`).join("")}
-      <div class="row"><b>${t("supported")}</b><div>${D.puzzles.filter((p) => p.reset).map((p) => `#${p.n} ${esc(p.name)}`).join(" · ")}</div></div>`, null);
+      <div class="row"><b>${t("supported")}</b><div>${[...D.puzzles.filter((p) => p.reset).map((p) => `#${p.n} ${esc(p.name)}`),
+        ...D.lands.filter((l) => l.cmd).map((l) => `#${l.cmd.split(" ")[1]} ${esc(l.land)}`)].join(" · ")}</div></div>`, null);
 }
 
 // Items: the game's own icon > name > id, 0 to 318 one under the other; a click copies "/give <id>".

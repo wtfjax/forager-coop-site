@@ -41,6 +41,9 @@
       "Type them in the game chat, no cheats needed. They work for both players at once (the mod's test build, <code>play</code> branch).",
       "Вводите в чат игры, читы не нужны. Работают сразу для обоих игроков (тестовая версия мода, ветка <code>play</code>)."],
     wiki: ["Wiki", "Wiki", "Вики"],
+    respawnHelp: ["Recria o cristal gigante onde ele ficava, para os dois jogadores. Funciona mesmo depois de minerado.",
+      "Makes the giant crystal again where it stood, for both players. Works after it has been mined.",
+      "Заново создаёт гигантский кристалл на прежнем месте у обоих игроков. Работает и после того, как его добыли."],
     supported: ["Já suportados", "Supported so far", "Уже поддерживаются"],
     // skills
     gridPos: ["posição {0}×{1} na grade", "position {0}×{1} in the grid", "позиция {0}×{1} в сетке"],
