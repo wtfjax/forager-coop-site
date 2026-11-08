@@ -43,9 +43,9 @@ window.FORAGER = {
    "image": "https://static.wikia.nocookie.net/forager_gamepedia_en/images/e/ed/Ss_Charger.png/revision/latest?cb=20180922175547",
    "solution": "Fire the Thunder Rod at the battery or drink a Thunder Potion. Alternatively, a Watcher can charge it by firing at the player while hiding behind it.",
    "reward": "4x Small Chest",
-   "obj": "",
-   "status": "unknown",
-   "note": "Ainda não verificado no co-op.",
+   "obj": "objReceptorBig (175)",
+   "status": "fixed",
+   "note": "Corrigido (branch play): a carga de qualquer jogador (vara do trovão, poção do trovão, observador) vale para os dois, e os baús saem uma vez só, do anfitrião.",
    "reset": false
   },
   {
@@ -67,9 +67,9 @@ window.FORAGER = {
    "image": "https://static.wikia.nocookie.net/forager_gamepedia_en/images/6/67/Ss_Flowers_Island.png/revision/latest?cb=20180922175550",
    "solution": "There are 3 2x2 areas with flowers, and a similar area with no flowers. Dig those 4 spots.",
    "reward": "Big Chest",
-   "obj": "",
-   "status": "unknown",
-   "note": "Ainda não verificado no co-op.",
+   "obj": "objDigSpot (162), variável puzzle",
+   "status": "fixed",
+   "note": "Corrigido (branch play): cavar um ponto do enigma cava para os dois, e o baú sai uma vez só, do anfitrião.",
    "reset": false
   },
   {
