@@ -1,0 +1,9 @@
+{"W": 392, "H": 354,
+ "left": {"x": 21, "y": 39, "w": 174},
+ "plate": {"x": 32, "y": 18, "w": 150, "h": 39, "iconX": 57, "textX": 124, "textMax": 92},
+ "row": {"x": 29, "w": 157, "h": 24, "step": 27, "top": 63, "iconX": 16, "textX": 30},
+ "right": {"x": 196, "y": 9, "w": 173, "h": 338},
+ "title": 15, "sub": 29, "bigIcon": 49, "desc": 67, "line": 10,
+ "ing": {"top": 113, "step": 22, "iconX": 18, "textX": 39, "rightPad": 9},
+ "craft": {"minY": 247, "x": 24, "w": 125, "h": 25},
+ "small": {"dy": 30, "dy2": 60, "x": 26, "w": 60, "x2": 91, "w2": 55, "h": 24}}
