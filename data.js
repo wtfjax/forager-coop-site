@@ -115,9 +115,9 @@ window.FORAGER = {
    "image": "https://static.wikia.nocookie.net/forager_gamepedia_en/images/f/fd/Ss_3_Bells_Land.png/revision/latest?cb=20180922182451",
    "solution": "Each line equals a bell: right-high, middle-middle, left-low",
    "reward": "Big Chest",
-   "obj": "",
-   "status": "unknown",
-   "note": "Ainda não verificado no co-op.",
+   "obj": "objBell (191)",
+   "status": "fixed",
+   "note": "Corrigido (branch play): tocar um sino toca para os dois (som e animação), e o baú sai uma vez só, do anfitrião.",
    "reset": false
   },
   {
@@ -223,9 +223,9 @@ window.FORAGER = {
    "image": "https://static.wikia.nocookie.net/forager_gamepedia_en/images/1/1e/Ss_Lights_Out_Puzzle.png/revision/latest?cb=20180922183426",
    "solution": "Use this online <a href=\"http://perfectweb.org/ddo/solver/vale_puzzle.html\" target=\"_blank\">solver</a>",
    "reward": "Big Chest, 4x Small Chest",
-   "obj": "",
-   "status": "unknown",
-   "note": "Ainda não verificado no co-op.",
+   "obj": "objVolcanoPushDownPillar (182)",
+   "status": "fixed",
+   "note": "Corrigido (branch play): o convidado consegue baixar os 16 pilares, a animação aparece para os dois e o baú sai do anfitrião.",
    "reset": false
   }
  ],
