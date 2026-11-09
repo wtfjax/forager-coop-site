@@ -680,11 +680,11 @@ window.FORAGER = {
  "commands": [
   {
    "cmd": "/puzzlereset <n>",
-   "desc": "Reseta o puzzle n para os dois jogadores. Funciona com 5, 9, 11, 14, 15 (recria o bloco de gelo), 18 (recria os 4 baús pegando fogo) e 20 (recria o cristal gigante); o 15 e o 20 também tiram os baús de recompensa em volta."
+   "desc": "Só o host pode usar. Reseta o puzzle n para todos os jogadores. Funciona com 5, 9, 10 (sinos), 11, 14, 15 (recria o bloco de gelo), 18 (recria os 4 baús pegando fogo) e 20 (recria o cristal gigante); o 15 e o 20 também tiram os baús de recompensa em volta."
   },
   {
    "cmd": "/chestremove",
-   "desc": "Remove o baú do tesouro mais perto do jogador (até 160 px), para os dois."
+   "desc": "Só o host pode usar. Remove o baú do tesouro mais perto do host (até 160 px), para todos."
   }
  ],
  "items": [
