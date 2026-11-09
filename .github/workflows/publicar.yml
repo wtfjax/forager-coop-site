@@ -1,0 +1,23 @@
+# Publica o site no Vercel a cada envio para o main (de qualquer pessoa).
+# O plano gratuito do Vercel bloqueia commits de quem não é dono da conta; aqui a publicação
+# vai pelo token do dono (segredo VERCEL_TOKEN), sem os dados do commit.
+name: Publicar no Vercel
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+concurrency:
+  group: vercel
+  cancel-in-progress: true
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    env:
+      VERCEL_ORG_ID: team_dyJHoeQLiYgJ9u4KGBefkdBp
+      VERCEL_PROJECT_ID: prj_Ek6uwUty96JeICWzapRy7ajJjHA4
+    steps:
+      - uses: actions/checkout@v4
+      - name: Publicar
+        run: |
+          rm -rf .git
+          npx --yes vercel@latest deploy --prod --yes --token "${{ secrets.VERCEL_TOKEN }}"
