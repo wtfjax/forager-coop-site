@@ -7,7 +7,7 @@
 
   const S = {
     // header
-    legendFixed: ["corrigido por nós", "fixed by us", "исправлено нами"],
+    legendFixed: ["corrigido por nós 123", "fixed by us", "исправлено нами"],
     legendMod: ["sincronizado pelo mod", "synced by the mod", "синхронизировано модом"],
     legendUnknown: ["não verificado", "not checked", "не проверено"],
     vIslands: ["Ilhas", "Islands", "Острова"], vSkills: ["Habilidades", "Skills", "Навыки"], vFeats: ["Façanhas", "Feats", "Подвиги"],
